@@ -1,0 +1,63 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.id {
+    font-size: clamp(0.625rem, 0.75rem, 0.8rem);;
+    color: #114d38;
+}
+
+.details, .description, .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemons {
+    display: grid;
+    margin: 0 auto;
+    gap: 1;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #14A06F;
+    border-radius: 1rem; 
+}
+
+.type {
+    list-style: none;
+    background-color: #114d38;
+    font-weight: 400;
+    font-size: clamp(0.625rem, 0.75rem, 0.8rem);
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.pokemon .details img {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    align-self: flex-end;
+}
+

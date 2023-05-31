@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
+    <link rel="stylesheet" href="./assets/css/switch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
+</head>
+<body>
+    <section class="content">
+        <div class="top-bar">
+            <h1 class="text">Pokedex</h1>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <ol class="pokemons">
+            <li class="pokemon">
+                <div class="description">
+                    <span class="text name">Bulbasaur</span>
+                    <span class="id text">#001</span>
+                </div>
+                <div class="details">
+                    <ol class="types">
+                        <li class="type">
+                            <span class="text">grass</span>
+                            </li>
+                        <li class="type">
+                            <span class="text">poison</span>
+                        </li>
+                    </ol>
+                    <img src="./assets/images/001.png" alt="">
+                </div>
+            </li>
+        </ol>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

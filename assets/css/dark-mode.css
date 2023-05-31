@@ -1,0 +1,8 @@
+.dark-mode {
+    background-color: #131313;
+    color: white;
+}
+
+.pokemon.dark-mode, .id.dark-mode {
+     background-color: #046D49; 
+}
