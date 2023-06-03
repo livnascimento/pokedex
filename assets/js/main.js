@@ -1,16 +1,32 @@
-input = document.getElementsByTagName('input')
-text = document.getElementsByClassName('text')
-body = document.getElementsByTagName('body')
-cards = document.getElementsByClassName('pokemon')
-type = document.getElementsByClassName('type')
-id = document.getElementsByClassName('id')
+function jsonToHtml(pokemon) {
+    return `
+    <li class="pokemon">
+        <div class="description">
+            <span class="text name">${pokemon.name}</span>
+            <span class="id text">${pokemon.id}</span>
+        </div>
+        <div class="details">
+            <ol class="types">
+                <li class="type">
+                    <span class="text">grass</span>
+                    </li>
+                <li class="type">
+                    <span class="text">poison</span>
+                </li>
+            </ol>
+            <img src="./assets/images/001.png" alt="">
+        </div>
+    </li>
+    `
+}
 
-input[0].addEventListener("click", () => {
-    body[0].classList.toggle("dark-mode")
-    for (let i = 0 ; i < cards.length ; i++) {
-        cards[i].classList.toggle("dark-mode")
-    }
-    for (let i = 0 ; i < id.length ; i++) {
-        id[i].classList.toggle("dark-mode")
-    }
+pokeApi.getPokemons().then((list) => {
+
+    let listLi = []
+
+    list.forEach(pokemon => {
+        listLi.push(jsonToHtml(pokemon))
+    });
+    
+    pokemonsOl.innerHTML += listLi
 })
