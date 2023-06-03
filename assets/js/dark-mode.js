@@ -4,7 +4,6 @@ body = document.getElementsByTagName('body')
 cards = document.getElementsByClassName('pokemon')
 type = document.getElementsByClassName('type')
 id = document.getElementsByClassName('id')
-pokemonsOl = document.getElementById('pokemonsList')
 
 input[0].addEventListener("click", () => {
     body[0].classList.toggle("dark-mode")

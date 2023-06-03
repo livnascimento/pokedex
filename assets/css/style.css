@@ -39,13 +39,31 @@ body {
     margin: 1rem;
     font-weight: bold;
     color: white;
-    background-color: #14A06F;
     border-radius: 1rem; 
+}
+
+.pokemon.grass {
+    background-color: #49D0B0;
+}
+
+.pokemon.fire {
+    background-color: #FC6C6D;
+}
+
+.pokemon.water {
+    background-color: #76BEFE;
+}
+
+.pokemon.bug {
+    background-color: #a4c071;
+}
+
+.pokemon.normal {
+    background-color: #979783;
 }
 
 .type {
     list-style: none;
-    background-color: #114d38;
     font-weight: 400;
     font-size: clamp(0.625rem, 0.75rem, 0.8rem);
     margin: 0.25rem 0;
@@ -53,6 +71,26 @@ body {
     border-radius: 1rem;
     text-align: center;
 }
+
+.grass .type{
+    background-color: #114d38;
+} 
+
+.fire .type{
+    background-color: #4d1111;
+} 
+
+.water .type{
+    background-color: #11374d;
+} 
+
+.bug .type{
+    background-color: #404d11;
+} 
+
+.normal .type{
+    background-color: #464538;
+} 
 
 .pokemon .details img {
     max-width: 100%;

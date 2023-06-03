@@ -3,6 +3,22 @@
     color: white;
 }
 
-.pokemon.dark-mode, .id.dark-mode {
+.pokemon.dark-mode.grass , .grass .id.dark-mode {
      background-color: #046D49; 
+}
+
+.pokemon.dark-mode.fire , .fire .id.dark-mode {
+     background-color: #963a3a; 
+}
+
+.pokemon.dark-mode.water , .water .id.dark-mode {
+     background-color: #3d7bb3; 
+}
+
+.pokemon.dark-mode.bug , .bug .id.dark-mode {
+     background-color: #657942; 
+}
+
+.pokemon.dark-mode.normal , .normal .id.dark-mode {
+     background-color: #5a5a42; 
 }
