@@ -1,24 +1,81 @@
-.dark-mode {
-    background-color: #131313;
-    color: white;
+body.dark-mode {
+     background-color: #131313;
+     color: white;
 }
 
-.pokemon.dark-mode.grass , .grass .id.dark-mode {
-     background-color: #046D49; 
+.grass .description .dark-mode {
+     color: #114d38;
 }
 
-.pokemon.dark-mode.fire , .fire .id.dark-mode {
-     background-color: #963a3a; 
+.fire .description .dark-mode {
+     color: #4d1111;
 }
 
-.pokemon.dark-mode.water , .water .id.dark-mode {
-     background-color: #3d7bb3; 
+.water .description .dark-mode {
+     color: #11374d;
 }
 
-.pokemon.dark-mode.bug , .bug .id.dark-mode {
-     background-color: #657942; 
+.bug .description .dark-mode {
+     color: #404d11;
 }
 
-.pokemon.dark-mode.normal , .normal .id.dark-mode {
-     background-color: #5a5a42; 
+.normal .description .dark-mode {
+     color: #464538;
+}
+
+.electric .description .dark-mode {
+     color: #dda201;
+}
+
+.ice .description .dark-mode {
+     color: #00e4e4;
+}
+
+.ground .description .dark-mode {
+     color: #a5884a;
+}
+
+.flying .description .dark-mode {
+     color: #755bb4;
+}
+
+.poison .description .dark-mode {
+     color: #611956;
+}
+
+.fighting .description .dark-mode {
+     color: #921a1a;
+}
+
+.psychic .description .dark-mode {
+     color: #b13050;
+}
+
+.dark .description .dark-mode {
+     color: #493122;
+}
+
+.rock .description .dark-mode {
+     color: #796727;
+}
+
+.ghost .description .dark-mode {
+     color: #392550;
+}
+
+.steel .description .dark-mode {
+     color: #7d7a8d;
+}
+
+.dragon .description .dark-mode {
+     color: #44169b;
+}
+
+.fairy .description .dark-mode {
+     color: #b35f78;
+}
+
+.dark-mode .type {
+     filter: contrast(1.5);
+     filter: brightness(0.9);
 }

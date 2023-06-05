@@ -4,13 +4,20 @@ body = document.getElementsByTagName('body')
 cards = document.getElementsByClassName('pokemon')
 type = document.getElementsByClassName('type')
 id = document.getElementsByClassName('id')
+let name = document.getElementsByClassName('name')
 
 input[0].addEventListener("click", () => {
     body[0].classList.toggle("dark-mode")
     for (let i = 0 ; i < cards.length ; i++) {
         cards[i].classList.toggle("dark-mode")
     }
+    for (let i = 0 ; i < type.length ; i++) {
+        type[i].classList.toggle("dark-mode")
+    }
     for (let i = 0 ; i < id.length ; i++) {
         id[i].classList.toggle("dark-mode")
+        name[i].classList.toggle("dark-mode")
     }
+
 })
+
