@@ -6,7 +6,12 @@ type = document.getElementsByClassName('type')
 id = document.getElementsByClassName('id')
 let name = document.getElementsByClassName('name')
 
+let darkMode = false
+
 input[0].addEventListener("click", () => {
+
+    darkMode ? darkMode = false : darkMode = true
+
     body[0].classList.toggle("dark-mode")
     for (let i = 0 ; i < cards.length ; i++) {
         cards[i].classList.toggle("dark-mode")
