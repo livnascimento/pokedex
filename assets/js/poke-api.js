@@ -4,10 +4,9 @@ function pokemonModel (pokeDetail) {
     const pokemon = new Pokemon()
     pokemon.name = pokeDetail.name
     pokemon.id = pokeDetail.id
+
     const types = pokeDetail.types.map(typeSlot => typeSlot.type.name)
     const [ type ] = types
-
-    console.log(type)
 
     pokemon.types = types
     pokemon.type = type
@@ -22,9 +21,8 @@ pokeApi.pokemonDetails = (pokemon => {
     .then(pokemonModel)
 })
 
-pokeApi.getPokemons = (offset = 0, limit = 20) => {
+pokeApi.getPokemons = (offset, limit) => {
     const url = `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
-
     return fetch(url)
     .then((response) => {return response.json()})
     .then((jsonBody) => {return jsonBody.results})
