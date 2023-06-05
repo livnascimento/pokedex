@@ -15,8 +15,8 @@
 </head>
 <body>
     <section class="content">
-        <div class="top-bar">
-            <h1 class="text">Pokedex</h1>
+        <div class="top-bar" style="margin-inline: 70px;">
+            <h1 class="text">Pokédex</h1>
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
@@ -24,6 +24,9 @@
         </div>
         <ol class="pokemons" id="pokemonsList">
         </ol>
+        <div class="pagination">
+            <button id="loadMore">load more</button>
+        </div>
     </section>
     <script src="./assets/js/pokemon-model.js"></script>
     <script src="./assets/js/poke-api.js"></script>
